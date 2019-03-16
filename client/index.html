@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <!--My script-->
+    <script src="index.js" defer></script>
+    <title>Fullstack blog</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div style="padding-top: 10%" class="col s12 m8 offset-m2 l8 offset-l2 xl8 offset-xl2" id="posts">
+
+                <div style="padding-top: 60%" class="center">
+                    <div class="preloader-wrapper small active">
+                        <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                            <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red modal-trigger z-depth-1 scale-transition scale-out" data-target="createForm">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+
+    <div id="createForm" class="modal">
+        <div class="modal-content">
+            
+            <h4>Создать новый пост</h4>
+
+            <div class="input-field">
+                <input id="title" type="text" class="validate" required>
+                <label for="title">Название</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="text" class="materialize-textarea"></textarea>
+                <label for="text">Текст</label>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a class="waves-effect waves-light btn" id="createPost">Добавить</a>
+        </div>
+
+    </div>
+</body>
+</html>

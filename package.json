@@ -1,0 +1,25 @@
+{
+  "name": "fullstackblog",
+  "version": "1.0.0",
+  "description": "simple blog",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "blog",
+    "nodejs",
+    "fullstack"
+  ],
+  "author": "Igor Tkachev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
